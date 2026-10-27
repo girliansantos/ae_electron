@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Auditor Eletrônico</title>
+</head>
+<body>
+    <div class="titlebar">
+        <ul class="ul-titlebar">
+            <li>
+                <div class="dropdown-menu">
+                    <button class="dropdown-btn" onclick="dropdown_function('arquivo_menu')">Arquivo</button>
+                    <div class="dropdown-content" id="arquivo_menu">
+                        <a href="#">Configurações</a>
+                        <a href="#">Sair</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown-menu">
+                    <button class="dropdown-btn" onclick="dropdown_function('roteiros-menu')">Roteiros</button>
+                    <div class="dropdown-content" id="roteiros-menu">
+                        <a href="#" onclick="openPage('estoque')">Estoques</a>
+                        <a href="#">Combustíveis</a>
+                        <a href="#">Cruzamentos</a>
+                        <a href="#">Obrigações Acessórias</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <h1>Inicio da construção do sistema</h1>
+    <script src="renderer.js"></script>
+</body>
+</html>
